@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.header{
+    // background: #3494E6;  /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #00d2ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+
+    @media screen and (max-width: 1334px){
+        height: 100%;
+    }
+
+    &-title{
+        font-family: "Montserrat", sans-serif;
+        @include adaptive-value('font-size', 35, 21);
+        color: #fff;
+        font-weight: 700;
+        letter-spacing: 0.78px;
+        padding-top: 100px;
+        text-align: center;
+    }
+
+    &-cards{
+        @include flex(center, center);
+        gap: 25px;
+        padding-top: 50px;
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+    }
+
+    &-card{
+        background-color: #fff;
+        width: 300px;
+        padding: 45px 20px;
+        border-radius: 3px;
+
+        @media screen and (max-width: 400px){
+            width: 100%;
+        }
+    }
+
+    &-image{
+        width: 200px;
+        @include adaptive-value('width', 150, 100);
+        margin: 0 auto;
+        @include flex(center, center)
+    }
+
+    &-items{
+        @include flex(start, center);
+        flex-direction: column;
+        gap: 23px;
+        padding-top: 25px;
+    }
+
+    &-name{
+        font-family: "Montserrat", sans-serif;
+        color: #000;
+        @include adaptive-value('font-size', 19, 17);
+        font-weight: 500;
+        letter-spacing: 0.78px;
+    }
+
+    &-numbers{
+        font-family: "Montserrat", sans-serif;
+        color: #000;
+        @include adaptive-value('font-size', 18, 17);
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+
+    &-link{
+        background-color: #3a7bd5;
+        width: 100%;
+        color: #fff;
+        font-family: "Montserrat", sans-serif;
+        @include adaptive-value('font-size', 17, 15);
+        font-weight: 500;
+        letter-spacing: 0.78px;
+        padding: 10px;
+        border-radius: 4px;
+        @include flex(center, center);
+
+    }
+}
