@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .header{
-    // background: #3494E6;  /* fallback for old browsers */
-    // background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
-    // background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: #00d2ff;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -43,8 +40,7 @@
     }
 
     &-image{
-        width: 200px;
-        @include adaptive-value('width', 150, 100);
+        @include adaptive-value('width', 160, 130);
         margin: 0 auto;
         @include flex(center, center)
     }
@@ -59,7 +55,7 @@
     &-name{
         font-family: "Montserrat", sans-serif;
         color: #000;
-        @include adaptive-value('font-size', 19, 17);
+        @include adaptive-value('font-size', 20, 18);
         font-weight: 500;
         letter-spacing: 0.78px;
     }
@@ -67,7 +63,7 @@
     &-numbers{
         font-family: "Montserrat", sans-serif;
         color: #000;
-        @include adaptive-value('font-size', 18, 17);
+        @include adaptive-value('font-size', 19, 18);
         font-weight: 500;
         letter-spacing: 1px;
     }
@@ -77,7 +73,7 @@
         width: 100%;
         color: #fff;
         font-family: "Montserrat", sans-serif;
-        @include adaptive-value('font-size', 17, 15);
+        @include adaptive-value('font-size', 18, 16);
         font-weight: 500;
         letter-spacing: 0.78px;
         padding: 10px;
