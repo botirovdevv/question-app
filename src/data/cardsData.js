@@ -1,6 +1,6 @@
 import html from '../assets/images/htmlLogo.png'
 import css from '../assets/images/cssLogo.png'
-import js from '../assets/images/javascriptLogo.png'
+import js from '../assets/images/javaScriptLogo.png'
 import react from '../assets/images/reactLogo.png'
 export const cardsData = [
     {
